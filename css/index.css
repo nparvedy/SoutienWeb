@@ -1,19 +1,47 @@
 *{ /* Le margin de la page et son padding et à zéro pour toute la page */
     margin:0;
     padding:0; 
+    font-family:sans-serif;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration:none;
+    color:#fff;
 }
 
 header{
-    height:200px; /* on lui ajoute une taille */
     width:100%; /* Le bloc header fait toute la page de gauche à droite */
-    background-color:blue; /* on lui ajoute un fond bleu */
+    background-color:#313b63; /* on lui ajoute un fond bleu */
     display:flex; /* je change le display qui était un diplay:block en display:flex. Les propriétés ne sont donc plus les mêmes et finalement les deux éléments se retrouvent dans la même ligne.
     En display:block, les éléments se chevauchent et ne peuvent pas être sur la même ligne car elles prennent toute la largeur de la page. */
     Justify-content:space-between; /* les éléments dans le conteneur se séparent pour prendre toute la largeur de la page. */
 }
 
-.element{
-    height:200px;
-    width:200px;
-    background-color:red;
+#header_img_nav{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
 }
+
+#header_img_nav a:hover{
+    color:grey;
+}
+
+#header_img_nav img{
+    width:120px;
+    height:33px;
+}
+#header_img_nav ul{
+    display:flex;
+}
+#header_img_nav li{
+    padding:15px;
+}
+
+
