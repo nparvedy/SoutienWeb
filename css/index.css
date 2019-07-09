@@ -1,32 +1,34 @@
 *{ /* Le margin de la page et son padding et à zéro pour toute la page */
     margin:0;
     padding:0; 
-    font-family:sans-serif;
+    font-family:sans-serif; /* on enleve les serif de la police */
 }
 
 
 li{
-    list-style-type: none;
+    list-style-type: none; /* on désactive le type de liste à puce */
 }
 
 a{
-    text-decoration:none;
-    color:#fff;
+    text-decoration:none; /* on désactive la décoration du text de la balise <a> */
+    color:#fff; /* on lui donne une couleur blanche */
 }
 
 header{
     width:100%; /* Le bloc header fait toute la page de gauche à droite */
     background-color:#313b63; /* on lui ajoute un fond bleu */
-    display:flex; /* je change le display qui était un diplay:block en display:flex. Les propriétés ne sont donc plus les mêmes et finalement les deux éléments se retrouvent dans la même ligne.
-    En display:block, les éléments se chevauchent et ne peuvent pas être sur la même ligne car elles prennent toute la largeur de la page. */
-    Justify-content:space-between; /* les éléments dans le conteneur se séparent pour prendre toute la largeur de la page. */
+    display:flex; /* je change le display qui était un diplay:block en display:flex. Les propriétés ne sont donc plus les mêmes et finalement les deux éléments/enfants se retrouvent dans la même ligne.
+    En display:block, les éléments/enfants se chevauchent et ne peuvent pas être sur la même ligne car elles prennent toute la largeur de la page. */
+    Justify-content:space-between; /* les éléments dans le conteneur/parent se séparent pour prendre toute la largeur de la page. */
 }
 
 #header_img_nav{
-    width:100%;
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
+    width:100%; /* on dit que header_img_nav de prendre toute la largeur de la page */
+    display:flex; 
+    justify-content:space-around; /* les élements dans le conteneur/parent se séparent pour prendre toute la largeur tout en mettant un peu d'espace sur les côtés. */
+    align-items:center; /* on demande à flex de mettre les éléments au centre de haut en bas. */
+    padding-top:40px; /* on créer une séparation entre l'élement et le top du conteneur */
+    padding-bottom:15px; /* on créer une séparation entre l'élément et le bas du conteneur */
 }
 
 #header_img_nav a:hover{
@@ -38,10 +40,10 @@ header{
     height:33px;
 }
 #header_img_nav ul{
-    display:flex;
+    display:flex; /* on demande au parent de mettre les éléments li en ligne et non en column en utilisant display:flex; */
 }
 #header_img_nav li{
-    padding:15px;
+    padding:15px; /* on créer une séparation de tous les côtés entre l'élément/enfant et son conteneur/parent */
 }
 
 

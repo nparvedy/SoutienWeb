@@ -9,12 +9,12 @@
         <title>titre du site</title>
     </head>
 <body>
-    <header><!-- Balise html d'un conteneur en-tête -->
-        <div id="header_img_nav">
-            <img src="images/light.png" />
-            <nav>
-                <ul>
-                    <li><a href="#">Blog</a></li>
+    <header><!-- Parent de l'enfant header_img_nav -->
+        <div id="header_img_nav"><!-- Parent qui contiendra les enfants img et nav qui est lui-même enfant de header -->
+            <a href="#"><img src="images/light.png" /></a><!-- l'enfant img dont le parent est header_img_nav -->
+            <nav><!-- enfant nav dont le parent est header_img_nav -->
+                <ul><!-- parent des li dont lui-même est l'enfant du parent nav -->
+                    <li><a href="#">Blog</a></li><!-- enfant li dont le parent est ul -->
                     <li><a href="#">Check Your Spot</a></li>
                 </ul>
             </nav>
